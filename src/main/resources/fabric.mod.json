@@ -22,6 +22,7 @@
 			"net.rainy.armor.CustomArmorDataGenerator"
 		]
 	},
+	"Client": ["net.rainy.custom-armor.armorClient"],
 	"mixins": [
 		"custom-armor.mixins.json"
 	],
