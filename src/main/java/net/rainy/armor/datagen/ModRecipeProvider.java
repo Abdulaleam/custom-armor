@@ -46,6 +46,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('R', Items.TNT)
                 .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.TNT))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TNT_SWORD)
+                .pattern("R")
+                .pattern("R")
+                .pattern("F")
+                .input('R', Items.TNT)
+                .input('F', Items.STICK)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.TNT))
+                .offerTo(exporter);
+
 
 
     }
