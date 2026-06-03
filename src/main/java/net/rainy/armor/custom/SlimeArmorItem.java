@@ -14,18 +14,18 @@ import net.rainy.armor.effect.ModEffects;
 import java.util.List;
 import java.util.Map;
 
-public class ModArmorItem extends ArmorItem {
+public class SlimeArmorItem extends ArmorItem {
 
     private static final Map<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>()
-                    .put(ModArmorMaterials.tnt,
+                    .put(ModArmorMaterials.slime,
                             List.of(
-                                    new StatusEffectInstance(ModEffects.EXPLOSION, 400, 2, false, false)
+                                    new StatusEffectInstance(ModEffects.SLIMEY, 400, 2, false, false)
                             )
                     ).build();
 
 
-    public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
+    public SlimeArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
         super(material, type, settings);
     }
 

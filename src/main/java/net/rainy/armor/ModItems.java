@@ -25,9 +25,13 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.tnt, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
     public static final Item TNT_SWORD = Registry.register(
-            Registries.ITEM,
-            Identifier.of("custom-armor", "tnt_sword"),
+            Registries.ITEM, Identifier.of("custom-armor", "tnt_sword"),
             new TNTSword(new Item.Settings())
+    );
+
+    public static final Item SlIME_SLING = Registry.register(
+            Registries.ITEM, Identifier.of("custom-armor", "slime_sling"),
+            new SlimeSlingItem(new Item.Settings())
     );
     public static void registerModItems() {
         CustomArmor.LOGGER.info("Registering Modded items and armor  for " + CustomArmor.MOD_ID);

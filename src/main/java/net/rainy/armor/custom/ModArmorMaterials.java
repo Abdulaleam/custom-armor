@@ -27,6 +27,16 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.BODY, 3);
             }), 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(Items.TNT),
                     List.of(new ArmorMaterial.Layer(Identifier.of(CustomArmor.MOD_ID, "tnt"))), 0,0));
+    public static final RegistryEntry<ArmorMaterial> slime = registerArmorMaterial("slime",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 1);
+                map.put(ArmorItem.Type.LEGGINGS, 1);
+                map.put(ArmorItem.Type.CHESTPLATE, 1);
+                map.put(ArmorItem.Type.HELMET, 1);
+                map.put(ArmorItem.Type.BODY, 1);
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(Items.TNT),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(CustomArmor.MOD_ID, "slime"))), 0,0));
+
 
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {

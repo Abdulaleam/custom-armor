@@ -1,8 +1,14 @@
 {
-  "itemgroup.armor": "Custom Armor",
-  "item.custom-armor.tnt_chestplate": "Tnt ChestPlate",
-  "item.custom-armor.tnt_helmet": "Tnt Helmet",
-  "item.custom-armor.tnt_leggings": "Tnt Leggings",
-  "item.custom-armor.tnt_boots": "Tnt Boots",
-  "effect.custom-armor.explosion":"Explosion!"
+  "itemgroup.armor": "§c✦ §4C̷O̷R̷R̷U̷P̷T̷E̷D̷  §6Custom TNT Items §c✦",
+
+  "item.custom-armor.tnt_chestplate": "§4☠ §cT̷N̷T̷ ChestPlate §4☠",
+  "item.custom-armor.tnt_helmet": "§4☠ §cT̷N̷T̷ Helmet §4☠",
+  "item.custom-armor.tnt_leggings": "§4☠ §cT̷N̷T̷ Leggings §4☠",
+  "item.custom-armor.tnt_boots": "§4☠ §cT̷N̷T̷ Boots §4☠",
+
+  "item.custom-armor.tnt_sword": "§4☠ §c[§lT̷N̷T̷ S̷W̷O̷R̷D̷§r§c] §4☠",
+  "item.custom-armor.slime_sling": "§c☣ §6S§el§ai§bm§de §aS§bl§ci§6n§eg §c☣",
+
+  "effect.custom-armor.explosion": "§c§lBOOM §4§kXXXX§r §cExplosion! §4§kXXXX",
+  "effect.custom-armor.slimey": "§2☣ §aS§bl§ci§em§ae §2A§bd§ca§ep§ta§ct§ai§bo§cn §2☣"
 }

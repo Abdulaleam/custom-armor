@@ -7,6 +7,7 @@ import net.minecraft.item.ToolMaterials;
 
 public class TNTSword extends SwordItem {
 
+
         public TNTSword(Settings settings) {
                 super(ToolMaterials.IRON, settings);
         }

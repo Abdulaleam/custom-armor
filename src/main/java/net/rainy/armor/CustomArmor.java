@@ -20,23 +20,26 @@ public class CustomArmor implements ModInitializer {
 		ModEffects.registerEffects();
 
 
-		// TNT EXPLODING EFFECT
 
+
+
+
+		// IDK WHY I PUT THIS HERE , BUT IT WORKS , I TIRED MOVING IT , AND GOT A BUNCH OF ERRORS
+		// im making that if you are sneaking and right clicking , it will make you explode around you
+		// BUUUUUTTTT if you are just right click on a block , you bounce and explode under you
 		UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
 
-			if (world.isClient()) {
-				return ActionResult.PASS;
+			if (world.isClient()) {  return ActionResult.PASS;
 			}
 			if (!player.hasStatusEffect(ModEffects.EXPLOSION)) {
-				return ActionResult.PASS;}
+				 return ActionResult.PASS;}
 
 
 			if (player.isSneaking()) {
-				var pos = hitResult.getBlockPos();
-
+				  var pos = hitResult.getBlockPos();
 				world.createExplosion(
-						player, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, 6.0f,
-					     	World.ExplosionSourceType.MOB);
+					          	player, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, 6.0f,
+						World.ExplosionSourceType.MOB);
 				return ActionResult.SUCCESS;
 			}
 
@@ -48,12 +51,10 @@ public class CustomArmor implements ModInitializer {
 
 				world.createExplosion(
 						player, player.getX(), player.getY(), player.getZ(),
-						0.5f, World.ExplosionSourceType.NONE
-				);
-
-				player.fallDistance = 0;
-
-				return ActionResult.SUCCESS;
+						1.5f, World.ExplosionSourceType.NONE
+				); return ActionResult.SUCCESS;
 			}
 		});
+
+
 	      }}

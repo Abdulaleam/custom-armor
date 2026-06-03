@@ -12,13 +12,16 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup TNT_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(CustomArmor.MOD_ID, "custom_armor_items"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(Items.AMETHYST_SHARD))
+            FabricItemGroup.builder().icon(() -> new ItemStack(Items.TNT))
                     .displayName(Text.translatable("itemgroup.armor"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.TNT_HELMET);
                         entries.add(ModItems.TNT_CHESTPLATE);
                         entries.add(ModItems.TNT_LEGGINGS);
                         entries.add(ModItems.TNT_BOOTS);
+                        entries.add(ModItems.TNT_SWORD);
+                        entries.add(ModItems.SlIME_SLING);
+
 
 
 

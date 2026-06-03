@@ -18,12 +18,19 @@ public class ModEffects {
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
                             Identifier.of(CustomArmor.MOD_ID, "explosion"), +0.1f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+    public static final RegistryEntry<StatusEffect> SLIMEY = registerStatusEffect("slimey",
+            new SlimeyEffect(StatusEffectCategory.BENEFICIAL, 0x36ebab)
+                    .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
+                            Identifier.of(CustomArmor.MOD_ID, "slimey"), -0.15f,
+                            EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+    // its slime , so i think its fair i decrease speed? pretty fair yes
+
 
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(CustomArmor.MOD_ID, name), statusEffect);
     }
 
     public static void registerEffects() {
-        CustomArmor.LOGGER.info("Registering Mod Effects such as EXPLOSION for " + CustomArmor.MOD_ID);
+        CustomArmor.LOGGER.info("Registering Mod Effects such as EXPLOSION and slimeee for " + CustomArmor.MOD_ID);
     }
 }
