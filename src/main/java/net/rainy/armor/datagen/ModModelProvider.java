@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
 import net.rainy.armor.ModItems;
 
@@ -25,6 +26,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.TNT_CHESTPLATE));
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.TNT_BOOTS));
+        itemModelGenerator.register(ModItems.TNT_SWORD, Models.HANDHELD);
 
 
 
