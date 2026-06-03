@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "pattern": [
+    "R R",
+    "R R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "custom-armor:slime_boots"
+  }
+}

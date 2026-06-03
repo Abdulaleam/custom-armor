@@ -54,6 +54,45 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('F', Items.STICK)
                 .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.TNT))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SlIME_SLING)
+                .pattern("RF ")
+                .pattern("R F")
+                .pattern("RF ")
+                .input('R', Items.SLIME_BALL)
+                .input('F', Items.STICK)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_CHESTPLATE)
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .input('R', Items.SLIME_BALL)
+
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_LEGGINGS)
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', Items.SLIME_BALL)
+
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_BOOTS)
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', Items.SLIME_BALL)
+
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_HELMET)
+                .pattern("RRR")
+                .pattern("R R")
+                .input('R', Items.SLIME_BALL)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter);
+
+
 
 
 

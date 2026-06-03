@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "pattern": [
+    "RF ",
+    "R F",
+    "RF "
+  ],
+  "result": {
+    "count": 1,
+    "id": "custom-armor:slime_sling"
+  }
+}
