@@ -5,6 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.rainy.armor.custom.ModArmorItem;
 import net.rainy.armor.custom.ModArmorMaterials;
 
 public class ModItems {
@@ -12,10 +13,10 @@ public class ModItems {
         return Registry.register(Registries.ITEM, Identifier.of(CustomArmor.MOD_ID, name), item);
     }
     public static final Item TNT_HELMET = registerItem("tnt_helmet",
-            new ArmorItem(ModArmorMaterials.tnt, ArmorItem.Type.HELMET, new Item.Settings()
+            new ModArmorItem(ModArmorMaterials.tnt, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
     public static final Item TNT_CHESTPLATE = registerItem("tnt_chestplate",
-            new ArmorItem(ModArmorMaterials.tnt, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            new ModArmorItem(ModArmorMaterials.tnt, ArmorItem.Type.CHESTPLATE, new Item.Settings()
                     .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
     public static final Item TNT_LEGGINGS = registerItem("tnt_leggings",
             new ArmorItem(ModArmorMaterials.tnt, ArmorItem.Type.LEGGINGS, new Item.Settings()

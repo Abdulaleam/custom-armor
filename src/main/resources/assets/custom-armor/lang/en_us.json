@@ -3,5 +3,6 @@
   "item.custom-armor.tnt_chestplate": "Tnt ChestPlate",
   "item.custom-armor.tnt_helmet": "Tnt Helmet",
   "item.custom-armor.tnt_leggings": "Tnt Leggings",
-  "item.custom-armor.tnt_boots": "Tnt Boots"
+  "item.custom-armor.tnt_boots": "Tnt Boots",
+  "effect.custom-armor.explosion":"Explosion!"
 }

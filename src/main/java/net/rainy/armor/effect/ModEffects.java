@@ -16,7 +16,7 @@ public class ModEffects {
     public static final RegistryEntry<StatusEffect> EXPLOSION = registerStatusEffect("explosion",
             new ExplosionEffect(StatusEffectCategory.BENEFICIAL, 0x36ebab)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
-                            Identifier.of(CustomArmor.MOD_ID, "explosion"), -0.25f,
+                            Identifier.of(CustomArmor.MOD_ID, "explosion"), +0.1f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
@@ -24,6 +24,6 @@ public class ModEffects {
     }
 
     public static void registerEffects() {
-        CustomArmor.LOGGER.info("Registering Mod Effects for " + CustomArmor.MOD_ID);
+        CustomArmor.LOGGER.info("Registering Mod Effects such as EXPLOSION for " + CustomArmor.MOD_ID);
     }
 }
