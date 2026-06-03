@@ -30,15 +30,15 @@ public class SlimeSlingItem extends Item {
 
         int timeUsed = this.getMaxUseTime(stack, user) - remainingUseTicks;
 
-        float power = timeUsed / 10f;
-        power = (power * power + power * 2f) / 2f;
-        power *= 4f;
+        float power = timeUsed / 8f;
+        power = (power * power + power * 4f) / 2f;
+        power *= 5f;
 
-        if (power > 2f) power = 4f;
+        if (power > 2f) power = 7f;
 
         Vec3d look = player.getRotationVec(1.0f).normalize();
 
-        player.addVelocity(-look.x * power, -look.y * power / 3f, -look.z * power
+        player.addVelocity(-look.x * power, -look.y * power / 4f, -look.z * power
         );
 
         player.velocityModified = true;

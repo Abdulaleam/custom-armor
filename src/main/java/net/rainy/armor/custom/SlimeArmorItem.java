@@ -1,6 +1,5 @@
 package net.rainy.armor.custom;
 import com.google.common.collect.ImmutableMap;
-import net.minecraft.block.Portal;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -10,7 +9,6 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.World;
-import net.rainy.armor.custom.ModArmorMaterials;
 import net.rainy.armor.effect.ModEffects;
 
 import java.util.List;
@@ -22,8 +20,9 @@ public class SlimeArmorItem extends ArmorItem {
             new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>()
                     .put(ModArmorMaterials.slime,
                             List.of(
-                                    new StatusEffectInstance(ModEffects.SLIMEY, 400, 2, false, true),
-                                    new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 55, false, false)
+                                    new StatusEffectInstance(ModEffects.SLIMEY, 400, 2, false, false),
+                                    new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 50, false, false),
+                                    new StatusEffectInstance(StatusEffects.JUMP_BOOST, 400, 2, false, false)
 
                             )
                     ).build();

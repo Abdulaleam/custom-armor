@@ -7,6 +7,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.rainy.armor.custom.ModArmorItem;
 import net.rainy.armor.custom.ModArmorMaterials;
+import net.rainy.armor.custom.SlimeArmorItem;
 
 public class ModItems {
     private static Item registerItem(String name, Item item) {
@@ -29,10 +30,10 @@ public class ModItems {
             new TNTSword(new Item.Settings())
     );
     public static final Item SLIME_HELMET = registerItem("slime_helmet",
-            new ArmorItem(ModArmorMaterials.slime, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            new SlimeArmorItem(ModArmorMaterials.slime, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
     public static final Item SLIME_CHESTPLATE = registerItem("slime_chestplate",
-            new ArmorItem(ModArmorMaterials.slime, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            new SlimeArmorItem(ModArmorMaterials.slime, ArmorItem.Type.CHESTPLATE, new Item.Settings()
                     .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
 
     public static final Item SLIME_LEGGINGS = registerItem("slime_leggings",
@@ -40,8 +41,8 @@ public class ModItems {
                     .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
 
     public static final Item SLIME_BOOTS = registerItem("slime_boots",
-            new ArmorItem(ModArmorMaterials.slime, ArmorItem.Type.LEGGINGS, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+            new ArmorItem(ModArmorMaterials.slime, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(SlimeArmorItem.Type.LEGGINGS.getMaxDamage(15))));
 
     public static final Item SlIME_SLING = Registry.register(
             Registries.ITEM, Identifier.of("custom-armor", "slime_sling"),
