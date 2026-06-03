@@ -1,4 +1,5 @@
-// 1.21.1	2026-06-03T09:57:19.036883	Custom Armor/Recipes
+// 1.21.1	2026-06-03T10:00:33.673052	Custom Armor/Recipes
+0ba4a693582b15b244e038a2fd3357f0ba67bab4 data\custom-armor\recipe\tnt_sword.json
 a357ebf84471c9927c805b0ab7f0371ece01b1b7 data\custom-armor\advancement\recipes\misc\tnt_helmet.json
 8b777cd918b410c29ee1db8b74e935f94b254e23 data\custom-armor\advancement\recipes\misc\tnt_leggings.json
 fbf61c54f6e1882a90d88eba536ed1abbd2814a4 data\custom-armor\recipe\tnt_helmet.json
@@ -7,3 +8,4 @@ fbf61c54f6e1882a90d88eba536ed1abbd2814a4 data\custom-armor\recipe\tnt_helmet.jso
 5d7c2af372aea741c2d06fb3432d23ed386b605c data\custom-armor\recipe\tnt_boots.json
 7f60dec3856ed7039494b7852b06624b486b64a0 data\custom-armor\recipe\tnt_chestplate.json
 a50127b24f8672350a94e9c5c914b4cbd0290a74 data\custom-armor\advancement\recipes\misc\tnt_chestplate.json
+8978c2fc469deb2a5a5564990fbae1002fafb65a data\custom-armor\advancement\recipes\misc\tnt_sword.json
