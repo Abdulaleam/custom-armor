@@ -1,14 +1,21 @@
 {
-  "itemgroup.armor": "§c✦ §4C̷O̷R̷R̷U̷P̷T̷E̷D̷  §6Custom TNT Items §c✦",
+  "itemgroup.armor.tnt": "§c✦ §4C̷O̷R̷R̷U̷P̷T̷E̷D̷ §6TNT Gear §c✦",
 
-  "item.custom-armor.tnt_chestplate": "§4☠ §cT̷N̷T̷ ChestPlate §4☠",
+  "item.custom-armor.tnt_chestplate": "§4☠ §cT̷N̷T̷ Chestplate §4☠",
   "item.custom-armor.tnt_helmet": "§4☠ §cT̷N̷T̷ Helmet §4☠",
   "item.custom-armor.tnt_leggings": "§4☠ §cT̷N̷T̷ Leggings §4☠",
   "item.custom-armor.tnt_boots": "§4☠ §cT̷N̷T̷ Boots §4☠",
-
   "item.custom-armor.tnt_sword": "§4☠ §c[§lT̷N̷T̷ S̷W̷O̷R̷D̷§r§c] §4☠",
-  "item.custom-armor.slime_sling": "§c☣ §6S§el§ai§bm§de §aS§bl§ci§6n§eg §c☣",
 
-  "effect.custom-armor.explosion": "§c§lBOOM §4§kXXXX§r §cExplosion! §4§kXXXX",
-  "effect.custom-armor.slimey": "§2☣ §aS§bl§ci§em§ae §2A§bd§ca§ep§ta§ct§ai§bo§cn §2☣"
+  "itemgroup.armor.slime": "§a☣ §2C̷O̷R̷R̷U̷P̷T̷E̷D̷ §aSlime Gear §2☣",
+
+  "item.custom-armor.slime_chestplate": "§a☣ §2S̷l̷i̷m̷e̷ Chestplate §a☣",
+  "item.custom-armor.slime_helmet": "§a☣ §2S̷l̷i̷m̷e̷ Helmet §a☣",
+  "item.custom-armor.slime_leggings": "§a☣ §2S̷l̷i̷m̷e̷ Leggings §a☣",
+  "item.custom-armor.slime_boots": "§a☣ §2S̷l̷i̷m̷e̷ Boots §a☣",
+
+  "item.custom-armor.slime_sling": "§a☣ §6S§el§ai§bm§de §aS§bl§ci§6n§eg §a☣",
+
+  "effect.custom-armor.explosion": "§c☠ §4B̷O̷O̷M̷ §cImpact §4☠",
+  "effect.custom-armor.slimey": "§a☣ §2S̷l̷i̷m̷e̷ Mutation §a☣"
 }

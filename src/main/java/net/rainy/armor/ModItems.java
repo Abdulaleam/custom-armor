@@ -28,6 +28,20 @@ public class ModItems {
             Registries.ITEM, Identifier.of("custom-armor", "tnt_sword"),
             new TNTSword(new Item.Settings())
     );
+    public static final Item SLIME_HELMET = registerItem("slime_helmet",
+            new ArmorItem(ModArmorMaterials.slime, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item SLIME_CHESTPLATE = registerItem("slime_chestplate",
+            new ArmorItem(ModArmorMaterials.slime, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+
+    public static final Item SLIME_LEGGINGS = registerItem("slime_leggings",
+            new ArmorItem(ModArmorMaterials.slime, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+
+    public static final Item SLIME_BOOTS = registerItem("slime_boots",
+            new ArmorItem(ModArmorMaterials.slime, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
 
     public static final Item SlIME_SLING = Registry.register(
             Registries.ITEM, Identifier.of("custom-armor", "slime_sling"),
