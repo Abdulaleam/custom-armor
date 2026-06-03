@@ -8,21 +8,17 @@ import net.minecraft.entity.effect.StatusEffects;
 
 public class ExplosionEffect extends StatusEffect {
 
-    public ExplosionEffect() {
-        super(StatusEffectCategory.BENEFICIAL, 0xFF6600);
+    public ExplosionEffect(
+            StatusEffectCategory category, int color) {
+            super(category, color);
     }
 
     @Override
     public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
         entity.addStatusEffect(
                 new StatusEffectInstance(
-                        StatusEffects.RESISTANCE,
-                        5,
-                        89,
-                        false,
-                        false,
-                        false
-                )
+                        StatusEffects.RESISTANCE, 5, 89, false,
+                        false, false)
         );
 
         return true;
