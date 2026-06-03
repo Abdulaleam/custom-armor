@@ -10,4 +10,4 @@ pluginManagement {
 }
 
 // Should match your modid
-rootProject.name = 'custom-armor'
+rootProject.name = 'custom-armor1.21..1'

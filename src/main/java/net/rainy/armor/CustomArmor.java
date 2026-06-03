@@ -11,6 +11,8 @@ public class CustomArmor implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 
+		ModItems.registerModItems();
 	}
 }
