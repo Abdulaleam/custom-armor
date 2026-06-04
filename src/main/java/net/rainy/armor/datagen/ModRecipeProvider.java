@@ -82,9 +82,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("R R")
                 .pattern("R R")
                 .input('R', Items.SLIME_BALL)
-
                 .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SLIME_BALL))
                 .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ICE_HELMET)
                 .pattern("RRR")
                 .pattern("R R")
@@ -97,24 +97,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("RRR")
                 .pattern("RRR")
                 .input('R', Items.SNOWBALL)
-
                 .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SNOWBALL))
                 .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ICE_LEGGINGS)
                 .pattern("RRR")
                 .pattern("R R")
                 .pattern("R R")
                 .input('R', Items.SNOWBALL)
-
                 .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SNOWBALL))
                 .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ICE_BOOTS)
                 .pattern("R R")
                 .pattern("R R")
                 .input('R', Items.SNOWBALL)
-
                 .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SNOWBALL))
                 .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_HELMET)
                 .pattern("RRR")
                 .pattern("R R")
@@ -155,9 +155,40 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('R', Items.GREEN_BED)
                 .input('R', Items.RED_BED)
                 .input('R', Items.BLACK_BED)
-
-                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SLIME_BALL))
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.COBBLESTONE))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BEDROCK_HELMET)
+                .pattern("RRR")
+                .pattern("R R")
+                .input('R', Items.BEDROCK)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.COBBLESTONE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BEDROCK_CHESTPLATE)
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .input('R', Items.BEDROCK)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.COBBLESTONE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BEDROCK_LEGGINGS)
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', Items.BEDROCK)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.COBBLESTONE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BEDROCK_BOOTS)
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', Items.BEDROCK)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.COBBLESTONE))
+                .offerTo(exporter);
+
+
 
 
 
