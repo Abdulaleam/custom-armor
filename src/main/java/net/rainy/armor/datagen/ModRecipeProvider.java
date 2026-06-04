@@ -4,9 +4,13 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.util.Identifier;
+import net.rainy.armor.CustomArmor;
 import net.rainy.armor.ModItems;
 
 import java.util.concurrent.CompletableFuture;
@@ -121,43 +125,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('R', Items.SLIME_BALL)
                 .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SLIME_BALL))
                 .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BEDROCK)
-                .pattern("RF")
-                .input('F', Items.COBBLESTONE)
-                .input('R', Items.WHITE_BED)
-                .input('R', Items.ORANGE_BED)
-                .input('R', Items.MAGENTA_BED)
-                .input('R', Items.LIGHT_BLUE_BED)
-                .input('R', Items.YELLOW_BED)
-                .input('R', Items.LIME_BED)
-                .input('R', Items.PINK_BED)
-                .input('R', Items.GRAY_BED)
-                .input('R', Items.LIGHT_GRAY_BED)
-                .input('R', Items.CYAN_BED)
-                .input('R', Items.PURPLE_BED)
-                .input('R', Items.BLUE_BED)
-                .input('R', Items.BROWN_BED)
-                .input('R', Items.GREEN_BED)
-                .input('R', Items.RED_BED)
-                .input('R', Items.WHITE_BED)
-                .input('R', Items.ORANGE_BED)
-                .input('R', Items.MAGENTA_BED)
-                .input('R', Items.LIGHT_BLUE_BED)
-                .input('R', Items.YELLOW_BED)
-                .input('R', Items.LIME_BED)
-                .input('R', Items.PINK_BED)
-                .input('R', Items.GRAY_BED)
-                .input('R', Items.LIGHT_GRAY_BED)
-                .input('R', Items.CYAN_BED)
-                .input('R', Items.PURPLE_BED)
-                .input('R', Items.BLUE_BED)
-                .input('R', Items.BROWN_BED)
-                .input('R', Items.GREEN_BED)
-                .input('R', Items.RED_BED)
-                .input('R', Items.BLACK_BED)
-                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.COBBLESTONE))
-                .offerTo(exporter);
-
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BEDROCK)
+                // 🛏️ This tag automatically handles all 16 bed colors!
+                .input(ItemTags.BEDS)
+                .input(Items.COBBLESTONE)
+                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
+                // You must specify an Identifier for the recipe output file path
+                .offerTo(exporter, Identifier.of(CustomArmor.MOD_ID, "bedrock_from_bed"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BEDROCK_HELMET)
                 .pattern("RRR")
                 .pattern("R R")
