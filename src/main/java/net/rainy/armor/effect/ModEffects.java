@@ -27,10 +27,10 @@ public class ModEffects {
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
                             Identifier.of(CustomArmor.MOD_ID, "frosty"), +0.05f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-    public static final RegistryEntry<StatusEffect> BEDROCK = registerStatusEffect("bedrock",
+    public static final RegistryEntry<StatusEffect> BEDROCKY = registerStatusEffect("bedrocky",
             new BedrockEffect(StatusEffectCategory.BENEFICIAL, 0x36ebab)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
-                            Identifier.of(CustomArmor.MOD_ID, "bedrock"), +0.05f,
+                            Identifier.of(CustomArmor.MOD_ID, "bedrock_speed"), +0.05f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
                     .addAttributeModifier(EntityAttributes.GENERIC_SCALE,
                             Identifier.of(CustomArmor.MOD_ID, "bedrock_size"), -0.8f,

@@ -52,7 +52,7 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.CHESTPLATE,100);
                 map.put(ArmorItem.Type.HELMET, 100);
                 map.put(ArmorItem.Type.BODY, 100);
-            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(Items.PACKED_ICE),
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(Items.BEDROCK),
                     List.of(new ArmorMaterial.Layer(Identifier.of(CustomArmor.MOD_ID, "bedrock"))), 0,0));
 
 

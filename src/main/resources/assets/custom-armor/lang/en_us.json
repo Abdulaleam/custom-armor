@@ -1,31 +1,40 @@
 {
-  "itemgroup.armor.tnt": "§c☠ TNT Set",
+  "itemgroup.armor.tnt": "§c☠ TNT Apocalypse",
 
-  "item.custom-armor.tnt_chestplate": "§cTNT Chestplate of Cataclysm",
-  "item.custom-armor.tnt_helmet": "§cTNT Helmet of Detonation",
-  "item.custom-armor.tnt_leggings": "§cTNT Leggings of Shockwave",
-  "item.custom-armor.tnt_boots": "§cTNT Boots of Blaststep",
-  "item.custom-armor.tnt_sword": "§cTNT Sword of Annihilation",
+  "item.custom-armor.tnt_chestplate": "§c§l☠ Cataclysmic Coreguard",
+  "item.custom-armor.tnt_helmet": "§c§l☠ Apex Detonator Crown",
+  "item.custom-armor.tnt_leggings": "§c§l☠ Shockwave Grieves of Ruin",
+  "item.custom-armor.tnt_boots": "§c§l☠ Blaststep Doom-Stompers",
+  "item.custom-armor.tnt_sword": "§c§l⚡ World-Ender Oblivion Blade",
 
-  "itemgroup.armor.slime": "§a☣ Slime Set",
+  "itemgroup.armor.slime": "§a☣ Slime Mutation",
 
-  "item.custom-armor.slime_chestplate": "§aSlime Chestplate of Mutation",
-  "item.custom-armor.slime_helmet": "§aSlime Helmet of Mind Ooze",
-  "item.custom-armor.slime_leggings": "§aSlime Leggings of Absorption",
-  "item.custom-armor.slime_boots": "§aSlime Boots of Bounce",
-  "item.custom-armor.slime_sling": "§aSlime Sling of Launch",
+  "item.custom-armor.slime_chestplate": "§a§l☣ Toxic Mutagenic Carapace",
+  "item.custom-armor.slime_helmet": "§a§l☣ Mind-Ooze Synaptic Veil",
+  "item.custom-armor.slime_leggings": "§a§l☣ Kinetic Absorption Greaves",
+  "item.custom-armor.slime_boots": "§a§l☣ Apex Elastic Springs",
+  "item.custom-armor.slime_sling": "§a§l☄ Corrosive Slingshot of Propulsion",
 
-  "itemgroup.armor.ice": "§b❄ Ice Set",
+  "itemgroup.armor.ice": "§b❄ Ice Citadel",
 
-  "item.custom-armor.ice_chestplate": "§bIce Chestplate of Permafrost",
-  "item.custom-armor.ice_helmet": "§bIce Helmet of Glacial Will",
-  "item.custom-armor.ice_leggings": "§bIce Leggings of Frozen Path",
-  "item.custom-armor.ice_boots": "§bIce Boots of Cryo Trail",
-  "item.custom-armor.ice_sword": "§bFrost Sword of Endless Winter",
+  "item.custom-armor.ice_chestplate": "§b§l❄ Aegis of Eternal Permafrost",
+  "item.custom-armor.ice_helmet": "§b§l❄ Visor of Glacial Dominance",
+  "item.custom-armor.ice_leggings": "§b§l❄ Frostmarrow Bulwark Trails",
+  "item.custom-armor.ice_boots": "§b§l❄ Cryo-Shatter Gliders",
+  "item.custom-armor.ice_sword": "§b§l⚔ Soul-Reaper Frostmourne",
 
-  "item.minecraft.trident": "§b❄ Abyssal Frost Spear",
+  "item.minecraft.trident": "§b§l🔱 Abyssal Frost-Bore Harpoon",
 
-  "effect.custom-armor.slimey": "§a☣ Slime",
-  "effect.custom-armor.explosion": "§c☠ Blast",
-  "effect.custom-armor.frosty": "§b❄ Frost"
+  "itemgroup.armor.bedrock": "§8🛡 Bedrock Oblivion",
+
+  "item.custom-armor.bedrock_chestplate": "§8§l🛡 Voidforge Unyielding Plate",
+  "item.custom-armor.bedrock_helmet": "§8§l🛡 Greathelm of Infallible Bastion",
+  "item.custom-armor.bedrock_leggings": "§8§l🛡 Adamantite Pillar Legguards",
+  "item.custom-armor.bedrock_boots": "§8§l🛡 Seismic Foundation Stompers",
+  "item.custom-armor.bedrock_sword": "§8§l⚔ World-Anchor Core Shatterer",
+
+  "effect.custom-armor.slimey": "§a§lSlime Bounce",
+  "effect.custom-armor.explosion": "§c§lBlast Backlash",
+  "effect.custom-armor.frosty": "§b§lCryo-Trail",
+  "effect.custom-armor.bedrocky": "§8§lBedrock Step"
 }

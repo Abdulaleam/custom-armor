@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-04T19:31:18.8684628	Custom Armor/Recipes
+// 1.21.1	2026-06-04T20:05:18.6757073	Custom Armor/Recipes
 da0b4010e6803e65a332dea352fe7eca26d09ab3 data\custom-armor\recipe\ice_chestplate.json
 f5fc1566e278b9698a1fb2c2fae839454682c250 data\custom-armor\recipe\slime_sling.json
 863b84074b35f274c51be5405721a05cd3cac5ec data\custom-armor\recipe\bedrock_from_bed.json
@@ -19,10 +19,12 @@ fbf61c54f6e1882a90d88eba536ed1abbd2814a4 data\custom-armor\recipe\tnt_helmet.jso
 5d7c2af372aea741c2d06fb3432d23ed386b605c data\custom-armor\recipe\tnt_boots.json
 21607684781c147000298793477100070ef69da3 data\custom-armor\recipe\ice_leggings.json
 a28cec3418ef62f3afd9e0ffc8616367f0b32eb3 data\custom-armor\recipe\bedrock_chestplate.json
+30997e7313891939242d5c1bb62bcf1b8ff6b5b9 data\custom-armor\recipe\bedrock_sword.json
 a357ebf84471c9927c805b0ab7f0371ece01b1b7 data\custom-armor\advancement\recipes\misc\tnt_helmet.json
 d9023ed5820751ea8e1bb7a0ded5c0e81e1ac2fd data\custom-armor\advancement\recipes\misc\bedrock_chestplate.json
 083dd59b14dc8b01f05d5f7ba279ab08845ca745 data\custom-armor\advancement\recipes\misc\ice_chestplate.json
 894dec05baaa8cb604716c91251a50080726e803 data\custom-armor\recipe\bedrock_leggings.json
+47cb56747a2ab33f3491c679cc5617c75279e2cf data\custom-armor\advancement\recipes\misc\bedrock_sword.json
 84858f16415445cc3d1bca6e1065649411f950c1 data\custom-armor\advancement\recipes\misc\tnt_boots.json
 0ba4a693582b15b244e038a2fd3357f0ba67bab4 data\custom-armor\recipe\tnt_sword.json
 89152228d33bc0e00f0e30bad6c442504fd72851 data\custom-armor\advancement\recipes\misc\slime_chestplate.json

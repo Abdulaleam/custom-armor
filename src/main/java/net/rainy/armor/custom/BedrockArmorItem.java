@@ -20,9 +20,8 @@ public class BedrockArmorItem extends ArmorItem {
             new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>()
                     .put(ModArmorMaterials.bedrock,
                             List.of(
-                                    new StatusEffectInstance(ModEffects.BEDROCK, 400, 2, false, false),
-                                    new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 50, false, false),
-                                    new StatusEffectInstance(StatusEffects.SPEED, 400, 1, false, false)
+                                    new StatusEffectInstance(ModEffects.BEDROCKY, 400, 2, false, false),
+                                    new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 50, false, false)
                             )).build();
 
 

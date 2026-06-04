@@ -44,6 +44,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEDROCK_LEGGINGS));
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEDROCK_BOOTS));
+        itemModelGenerator.register(ModItems.BEDROCK_SWORD, Models.HANDHELD);
+
 
 
 

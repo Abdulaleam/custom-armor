@@ -161,6 +161,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('R', Items.BEDROCK)
                 .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.COBBLESTONE))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BEDROCK_SWORD)
+                .pattern("R")
+                .pattern("R")
+                .pattern("F")
+                .input('R', Items.BEDROCK)
+                .input('F', Items.STICK)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.COBBLESTONE))
+                .offerTo(exporter);
+
 
 
 

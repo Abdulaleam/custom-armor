@@ -2,6 +2,7 @@ package net.rainy.armor;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -75,6 +76,15 @@ public class ModItems {
     public static final Item BEDROCK_BOOTS = registerItem("bedrock_boots",
             new ArmorItem(ModArmorMaterials.bedrock, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
+    public static final Item BEDROCK_SWORD = Registry.register(
+            Registries.ITEM,
+            Identifier.of("custom-armor", "bedrock_sword"),
+            // Pass the material, bonus damage, speed tracker, and settings
+            new BedrockSwordAblity(ToolMaterials.DIAMOND, new Item.Settings())
+    );
+
+
 
     public static void registerModItems() {
         CustomArmor.LOGGER.info("Registering Modded items and armor  for " + CustomArmor.MOD_ID);

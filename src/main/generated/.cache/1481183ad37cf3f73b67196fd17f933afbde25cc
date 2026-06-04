@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-04T19:31:18.8704623	Custom Armor/Model Definitions
+// 1.21.1	2026-06-04T20:05:18.6777043	Custom Armor/Model Definitions
 880644e6df75cde12526b08b92a3f7cd7cac7ccb assets\custom-armor\models\item\ice_chestplate_quartz_trim.json
 4b8ef892c277324f0ec1bb1aa4aabe48f786a3ed assets\custom-armor\models\item\slime_chestplate_diamond_trim.json
 b3d1da7db0bb57ff5f0c6539f4801a69d8168ca3 assets\custom-armor\models\item\ice_chestplate_lapis_trim.json
@@ -30,16 +30,16 @@ fa2cd0cbd69a78e1910d0af43e5158cacec3859c assets\custom-armor\models\item\bedrock
 c956e74721dd07620dda8238aae5ed1ad160a15e assets\custom-armor\models\item\bedrock_boots.json
 a337df73938756c64ebab7232c5bb11a03dba5b6 assets\custom-armor\models\item\bedrock_boots_gold_trim.json
 4052de0cca319b990e849b23bf8a12428a762a52 assets\custom-armor\models\item\tnt_boots_copper_trim.json
-094a013f7c673d82fff14d93ce41d5238e925443 assets\custom-armor\models\item\tnt_leggings_lapis_trim.json
 1ff7faeefff9774d24257cebef32f2b6bc968451 assets\custom-armor\models\item\bedrock_boots_quartz_trim.json
+094a013f7c673d82fff14d93ce41d5238e925443 assets\custom-armor\models\item\tnt_leggings_lapis_trim.json
 3fca167953732687ccea85c88c86880c1b454672 assets\custom-armor\models\item\ice_leggings_emerald_trim.json
 a6d2f83b62e933b6098dbad58362d581728f2558 assets\custom-armor\models\item\tnt_helmet_gold_trim.json
 12d99fa273fdcb87339fb5c0eb85e2dedbc090b1 assets\custom-armor\models\item\bedrock_chestplate_iron_trim.json
 edc2af4ebb94b46a7960c999e64b336a14352aa2 assets\custom-armor\models\item\bedrock_chestplate.json
 27c54c67f8e8e19d1f785f49b5d90d1cec2ecbfa assets\custom-armor\models\item\slime_helmet_netherite_trim.json
 2abfde4476c049d618231a6d447f934f17d69e2c assets\custom-armor\models\item\slime_leggings_copper_trim.json
-aefad7b06bf33e49b4f99fa0b8c38693d5762fb2 assets\custom-armor\models\item\ice_leggings_lapis_trim.json
 0a4d0a85a2d7d6b2a1c0aea5d6b4669c5116b714 assets\custom-armor\models\item\bedrock_helmet_copper_trim.json
+aefad7b06bf33e49b4f99fa0b8c38693d5762fb2 assets\custom-armor\models\item\ice_leggings_lapis_trim.json
 7c8f547b37954a592b4ea5017c74b0c4b62ee9cc assets\custom-armor\models\item\ice_helmet_diamond_trim.json
 0d48b0b86dbe038e908f36278ab28dcf942d4f30 assets\custom-armor\models\item\tnt_chestplate_amethyst_trim.json
 2c8221df2a5181398f9cfe471e2004e79990f0c2 assets\custom-armor\models\item\ice_leggings_quartz_trim.json
@@ -60,8 +60,8 @@ a9c1cc5ec4f8efbfb5de0bd20b70efb10bfdb6cf assets\custom-armor\models\item\tnt_leg
 f37c48ca10f01903b990196502e033edc0976fc7 assets\custom-armor\models\item\ice_boots_quartz_trim.json
 d3480e280374f07cf67fbcf5a0e2dcbaa798a067 assets\custom-armor\models\item\slime_boots_emerald_trim.json
 74955dda867c3abb4ad4ecfb8a3757b7122a21a7 assets\custom-armor\models\item\slime_chestplate_amethyst_trim.json
-ad2a09ee0efc694d975f343bc370613df6d9eb34 assets\custom-armor\models\item\ice_leggings_amethyst_trim.json
 6caf10c531ca57a1ef7a849664011c98e928519c assets\custom-armor\models\item\bedrock_helmet_netherite_trim.json
+ad2a09ee0efc694d975f343bc370613df6d9eb34 assets\custom-armor\models\item\ice_leggings_amethyst_trim.json
 9f1599ecfcb0611785009f30d81301d997f93db8 assets\custom-armor\models\item\tnt_boots_emerald_trim.json
 356af682edf93480fbc5a0f00275346f33a9163b assets\custom-armor\models\item\bedrock_helmet_quartz_trim.json
 e412c0a0c2abad4ed88237762516ff066778be14 assets\custom-armor\models\item\ice_boots_netherite_trim.json
@@ -103,6 +103,7 @@ ced7da97242b9b261b39d5838b8249172db0592f assets\custom-armor\models\item\tnt_che
 117942aebb28935ba6ff342b45d9be3a3adf6b6a assets\custom-armor\models\item\slime_boots_redstone_trim.json
 2240218539da5d6a8ce4282f09afae16234d9ccc assets\custom-armor\models\item\bedrock_boots_lapis_trim.json
 acb0f5cc3fa98e0c78348d852bea57f9d38c9875 assets\custom-armor\models\item\slime_chestplate_iron_trim.json
+0ededd46d7b961e16e05fa69e6075467d75bba2d assets\custom-armor\models\item\bedrock_sword.json
 fdd3dedfdd2e4cca437aa90d95095fb52093ec71 assets\custom-armor\models\item\slime_helmet_emerald_trim.json
 c4863dc2490431fa8b12a5a98bc94a3bc3877ce4 assets\custom-armor\models\item\ice_chestplate_amethyst_trim.json
 1e6450efc81eebb9e7426b33159b322b5fd6e336 assets\custom-armor\models\item\bedrock_leggings_redstone_trim.json
@@ -130,8 +131,8 @@ e9c1562aef30c4e6fee95d472d3bc363a8cd2b43 assets\custom-armor\models\item\slime_b
 2d43842b9e60397bd54a5924869b3281a91c07c0 assets\custom-armor\models\item\ice_helmet_lapis_trim.json
 4aa4eedd1c4d2f381491e5136ae51a7a78ab929c assets\custom-armor\models\item\tnt_chestplate_redstone_trim.json
 d8bae4eac5fe2d7e77ff838f75834e14469b05c9 assets\custom-armor\models\item\ice_boots_amethyst_trim.json
-f25fe84ecfd23397e95bdc1809eaa2ddfad4b538 assets\custom-armor\models\item\ice_boots.json
 39e5b9edf24503446e6083cbda42924ff9e633ee assets\custom-armor\models\item\bedrock_leggings_netherite_trim.json
+f25fe84ecfd23397e95bdc1809eaa2ddfad4b538 assets\custom-armor\models\item\ice_boots.json
 38eec1acebc13bf641ff04b63e692c0b84b3267e assets\custom-armor\models\item\bedrock_helmet.json
 9532dd5f3127f8164667f30a376b974516548b33 assets\custom-armor\models\item\slime_chestplate_netherite_trim.json
 b598fcb8fe8eca6bddbc5572fce5644bfdc20908 assets\custom-armor\models\item\tnt_chestplate_emerald_trim.json
@@ -153,8 +154,8 @@ d978050ca0df0139a52d29db3f7641e661d1d61a assets\custom-armor\models\item\bedrock
 c3164f76f89b1aaea9fbc17f1d65bffe0911663d assets\custom-armor\models\item\tnt_leggings_redstone_trim.json
 f58cb6eb835c6f8a7a7242f57204fb86b8094b6b assets\custom-armor\models\item\ice_leggings_iron_trim.json
 25646c2ee71505aa7862be6929e7c70dcce4eaa1 assets\custom-armor\models\item\slime_boots_amethyst_trim.json
-184ddbdc53442ec44959492154f1d7d08f5cbb6c assets\custom-armor\models\item\tnt_helmet_copper_trim.json
 1cf8892f1bd4b22f98b71e32a2aec445b9279c0b assets\custom-armor\models\item\slime_boots_iron_trim.json
+184ddbdc53442ec44959492154f1d7d08f5cbb6c assets\custom-armor\models\item\tnt_helmet_copper_trim.json
 e383996c1ea174d925ed29362fad6451fa62bbe1 assets\custom-armor\models\item\ice_boots_gold_trim.json
 2c3e43ce0ad9ae1061838ae458a1478ac6dbf9c7 assets\custom-armor\models\item\tnt_boots_lapis_trim.json
 269901240f4bd61774f8f8934d599581de9e7c6e assets\custom-armor\models\item\slime_chestplate_gold_trim.json
