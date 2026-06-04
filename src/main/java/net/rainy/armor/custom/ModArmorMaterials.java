@@ -45,6 +45,16 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.BODY, 5);
             }), 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(Items.PACKED_ICE),
                     List.of(new ArmorMaterial.Layer(Identifier.of(CustomArmor.MOD_ID, "ice"))), 0,0));
+    public static final RegistryEntry<ArmorMaterial> bedrock = registerArmorMaterial("bedrock",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS,100);
+                map.put(ArmorItem.Type.LEGGINGS, 100);
+                map.put(ArmorItem.Type.CHESTPLATE,100);
+                map.put(ArmorItem.Type.HELMET, 100);
+                map.put(ArmorItem.Type.BODY, 100);
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(Items.PACKED_ICE),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(CustomArmor.MOD_ID, "bedrock"))), 0,0));
+
 
 
 

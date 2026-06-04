@@ -27,7 +27,7 @@ public class ModEffects {
     public static final RegistryEntry<StatusEffect> FROSTY = registerStatusEffect("frosty",
             new FrostyEffect(StatusEffectCategory.BENEFICIAL, 0x36ebab)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
-                            Identifier.of(CustomArmor.MOD_ID, "frosty"), +0.2f,
+                            Identifier.of(CustomArmor.MOD_ID, "frosty"), +0.05f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
 

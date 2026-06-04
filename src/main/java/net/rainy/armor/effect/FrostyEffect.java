@@ -38,7 +38,7 @@ public class FrostyEffect extends StatusEffect {
     }
 
     @Override
-    public boolean canApplyUpdateEffect(int duration, int amplifier) {
+    public boolean canApplyUpdateEffect(int duration, int amplifier)     {
         return true;
     }
 }

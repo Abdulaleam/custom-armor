@@ -49,6 +49,20 @@ public class ModItemGroups {
 
 
                     }).build());
+    public static final ItemGroup BEDROCK = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(CustomArmor.MOD_ID, "custom_armor_bedrock"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(Items.SNOWBALL))
+                    .displayName(Text.translatable("itemgroup.armor.ice"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(Items.TRIDENT);
+                        entries.add(ModItems.BEDROCK_HELMET);
+                        entries.add(ModItems.BEDROCK_CHESTPLATE);
+                        entries.add(ModItems.BEDROCK_LEGGINGS);
+                        entries.add(ModItems.BEDROCK_BOOTS);
+
+
+                    }).build());
+
 
 
 

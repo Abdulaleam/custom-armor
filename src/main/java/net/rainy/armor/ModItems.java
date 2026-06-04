@@ -5,10 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.rainy.armor.custom.FrostArmorItem;
-import net.rainy.armor.custom.ModArmorItem;
-import net.rainy.armor.custom.ModArmorMaterials;
-import net.rainy.armor.custom.SlimeArmorItem;
+import net.rainy.armor.custom.*;
 
 public class ModItems {
     private static Item registerItem(String name, Item item) {
@@ -62,6 +59,21 @@ public class ModItems {
 
     public static final Item ICE_BOOTS = registerItem("ice_boots",
             new ArmorItem(ModArmorMaterials.ice, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+    public static final Item BEDROCK_HELMET = registerItem("bedrock_helmet",
+            new BedrockArmorItem(ModArmorMaterials.bedrock, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+
+    public static final Item BEDROCK_LEGGINGS = registerItem("bedrock_leggings",
+            new BedrockArmorItem(ModArmorMaterials.bedrock, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+
+    public static final Item BEDROCK_CHESTPLATE = registerItem("bedrock_chestplate",
+            new ArmorItem(ModArmorMaterials.bedrock, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+
+    public static final Item BEDROCK_BOOTS = registerItem("bedrock_boots",
+            new ArmorItem(ModArmorMaterials.bedrock, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
     public static void registerModItems() {
