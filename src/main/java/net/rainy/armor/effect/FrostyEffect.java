@@ -18,12 +18,22 @@ public class FrostyEffect extends StatusEffect {
         World world = entity.getWorld();
         if (world.isClient)
         {return true;}
-        if (entity.getVelocity().horizontalLengthSquared() > 0.05) {
-            BlockPos pos = entity.getBlockPos().down();
-            world.setBlockState(pos, Blocks.PACKED_ICE.getDefaultState());}
+
+        if (entity.isSprinting()) {
+            BlockPos centerPos = entity.getBlockPos();
+            int radius = 3;
+            int radiusSq = radius * radius;
+            for (int x = -radius; x <= radius; x++) {
+                for (int z = -radius; z <= radius; z++) {
+                    if ((x * x) + (z * z) <= radiusSq) {
+                        for (int y = -3; y <= -1; y++) {
+                            BlockPos targetPos = centerPos.add(x, y, z);
+                            world.setBlockState(targetPos, Blocks.PACKED_ICE.getDefaultState());
+                        }
+                    }
+                }}}
         return true;
     }
-
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
         return true;
