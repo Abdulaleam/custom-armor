@@ -85,12 +85,43 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SLIME_BALL))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ICE_HELMET)
+                .pattern("RRR")
+                .pattern("R R")
+                .input('R', Items.SNOWBALL)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SNOWBALL))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ICE_CHESTPLATE)
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .input('R', Items.SNOWBALL)
+
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SNOWBALL))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ICE_LEGGINGS)
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', Items.SNOWBALL)
+
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SNOWBALL))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ICE_BOOTS)
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', Items.SNOWBALL)
+
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SNOWBALL))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_HELMET)
                 .pattern("RRR")
                 .pattern("R R")
                 .input('R', Items.SLIME_BALL)
                 .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.SLIME_BALL))
                 .offerTo(exporter);
+
 
 
 

@@ -23,7 +23,6 @@ public class SlimeArmorItem extends ArmorItem {
                                     new StatusEffectInstance(ModEffects.SLIMEY, 400, 2, false, false),
                                     new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 50, false, false),
                                     new StatusEffectInstance(StatusEffects.JUMP_BOOST, 400, 2, false, false)
-
                             )
                     ).build();
 
@@ -70,9 +69,7 @@ public class SlimeArmorItem extends ArmorItem {
                     instance.getEffectType(),
                     220, // refresh timer (keeps it active)
                     instance.getAmplifier(),
-                    true,
-                    false,
-                    false
+                    true, false, false
             ));
         }
     }

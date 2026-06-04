@@ -36,6 +36,16 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.BODY, 1);
             }), 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(Items.TNT),
                     List.of(new ArmorMaterial.Layer(Identifier.of(CustomArmor.MOD_ID, "slime"))), 0,0));
+    public static final RegistryEntry<ArmorMaterial> ice = registerArmorMaterial("ice",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS,3);
+                map.put(ArmorItem.Type.LEGGINGS, 4);
+                map.put(ArmorItem.Type.CHESTPLATE, 6);
+                map.put(ArmorItem.Type.HELMET, 3);
+                map.put(ArmorItem.Type.BODY, 5);
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(Items.PACKED_ICE),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(CustomArmor.MOD_ID, "ice"))), 0,0));
+
 
 
 

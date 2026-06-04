@@ -5,6 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.rainy.armor.custom.FrostArmorItem;
 import net.rainy.armor.custom.ModArmorItem;
 import net.rainy.armor.custom.ModArmorMaterials;
 import net.rainy.armor.custom.SlimeArmorItem;
@@ -31,10 +32,10 @@ public class ModItems {
     );
     public static final Item SLIME_HELMET = registerItem("slime_helmet",
             new SlimeArmorItem(ModArmorMaterials.slime, ArmorItem.Type.HELMET, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
     public static final Item SLIME_CHESTPLATE = registerItem("slime_chestplate",
             new SlimeArmorItem(ModArmorMaterials.slime, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
 
     public static final Item SLIME_LEGGINGS = registerItem("slime_leggings",
             new ArmorItem(ModArmorMaterials.slime, ArmorItem.Type.LEGGINGS, new Item.Settings()
@@ -42,12 +43,27 @@ public class ModItems {
 
     public static final Item SLIME_BOOTS = registerItem("slime_boots",
             new ArmorItem(ModArmorMaterials.slime, ArmorItem.Type.BOOTS, new Item.Settings()
-                    .maxDamage(SlimeArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+                    .maxDamage(SlimeArmorItem.Type.BOOTS.getMaxDamage(15))));
 
     public static final Item SlIME_SLING = Registry.register(
             Registries.ITEM, Identifier.of("custom-armor", "slime_sling"),
-            new SlimeSlingItem(new Item.Settings())
-    );
+            new SlimeSlingItem(new Item.Settings()));
+    public static final Item ICE_HELMET = registerItem("ice_helmet",
+            new FrostArmorItem(ModArmorMaterials.ice, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+
+    public static final Item ICE_LEGGINGS = registerItem("ice_leggings",
+            new FrostArmorItem(ModArmorMaterials.ice, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+
+    public static final Item ICE_CHESTPLATE = registerItem("ice_chestplate",
+            new ArmorItem(ModArmorMaterials.ice, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+
+    public static final Item ICE_BOOTS = registerItem("ice_boots",
+            new ArmorItem(ModArmorMaterials.ice, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
     public static void registerModItems() {
         CustomArmor.LOGGER.info("Registering Modded items and armor  for " + CustomArmor.MOD_ID);
 }}

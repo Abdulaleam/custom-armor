@@ -24,6 +24,12 @@ public class ModEffects {
                             Identifier.of(CustomArmor.MOD_ID, "slimey"), -0.15f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
     // its slime , so i think its fair i decrease speed? pretty fair yes
+    public static final RegistryEntry<StatusEffect> FROSTY = registerStatusEffect("frosty",
+            new SlimeyEffect(StatusEffectCategory.BENEFICIAL, 0x36ebab)
+                    .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
+                            Identifier.of(CustomArmor.MOD_ID, "frosty"), +0.2f,
+                            EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+
 
 
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {

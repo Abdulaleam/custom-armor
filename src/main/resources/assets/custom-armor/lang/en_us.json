@@ -1,21 +1,31 @@
 {
-  "itemgroup.armor.tnt": "§c✦ §4C̷O̷R̷R̷U̷P̷T̷E̷D̷ §6TNT Gear §c✦",
+  "itemgroup.armor.tnt": "§c☠ TNT Set",
 
-  "item.custom-armor.tnt_chestplate": "§4☠ §cT̷N̷T̷ Chestplate §4☠",
-  "item.custom-armor.tnt_helmet": "§4☠ §cT̷N̷T̷ Helmet §4☠",
-  "item.custom-armor.tnt_leggings": "§4☠ §cT̷N̷T̷ Leggings §4☠",
-  "item.custom-armor.tnt_boots": "§4☠ §cT̷N̷T̷ Boots §4☠",
-  "item.custom-armor.tnt_sword": "§4☠ §c[§lT̷N̷T̷ S̷W̷O̷R̷D̷§r§c] §4☠",
+  "item.custom-armor.tnt_chestplate": "§cTNT Chestplate of Cataclysm",
+  "item.custom-armor.tnt_helmet": "§cTNT Helmet of Detonation",
+  "item.custom-armor.tnt_leggings": "§cTNT Leggings of Shockwave",
+  "item.custom-armor.tnt_boots": "§cTNT Boots of Blaststep",
+  "item.custom-armor.tnt_sword": "§cTNT Sword of Annihilation",
 
-  "itemgroup.armor.slime": "§a☣ §2C̷O̷R̷R̷U̷P̷T̷E̷D̷ §aSlime Gear §2☣",
+  "itemgroup.armor.slime": "§a☣ Slime Set",
 
-  "item.custom-armor.slime_chestplate": "§a☣ §2S̷l̷i̷m̷e̷ Chestplate §a☣",
-  "item.custom-armor.slime_helmet": "§a☣ §2S̷l̷i̷m̷e̷ Helmet §a☣",
-  "item.custom-armor.slime_leggings": "§a☣ §2S̷l̷i̷m̷e̷ Leggings §a☣",
-  "item.custom-armor.slime_boots": "§a☣ §2S̷l̷i̷m̷e̷ Boots §a☣",
+  "item.custom-armor.slime_chestplate": "§aSlime Chestplate of Mutation",
+  "item.custom-armor.slime_helmet": "§aSlime Helmet of Mind Ooze",
+  "item.custom-armor.slime_leggings": "§aSlime Leggings of Absorption",
+  "item.custom-armor.slime_boots": "§aSlime Boots of Bounce",
+  "item.custom-armor.slime_sling": "§aSlime Sling of Launch",
 
-  "item.custom-armor.slime_sling": "§a☣ §6S§el§ai§bm§de §aS§bl§ci§6n§eg §a☣",
+  "itemgroup.armor.ice": "§b❄ Ice Set",
 
-  "effect.custom-armor.explosion": "§c☠ §4B̷O̷O̷M̷ §cImpact §4☠",
-  "effect.custom-armor.slimey": "§a☣ §2S̷l̷i̷m̷e̷ Mutation §a☣"
+  "item.custom-armor.ice_chestplate": "§bIce Chestplate of Permafrost",
+  "item.custom-armor.ice_helmet": "§bIce Helmet of Glacial Will",
+  "item.custom-armor.ice_leggings": "§bIce Leggings of Frozen Path",
+  "item.custom-armor.ice_boots": "§bIce Boots of Cryo Trail",
+  "item.custom-armor.ice_sword": "§bFrost Sword of Endless Winter",
+
+  "item.minecraft.trident": "§b❄ Abyssal Frost Spear",
+
+  "effect.custom-armor.slimey": "§a☣ Slime",
+  "effect.custom-armor.explosion": "§c☠ Blast",
+  "effect.custom-armor.frosty": "§b❄ Frost"
 }

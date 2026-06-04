@@ -2,28 +2,31 @@ package net.rainy.armor.custom;
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.World;
-import net.rainy.armor.custom.ModArmorMaterials;
 import net.rainy.armor.effect.ModEffects;
 
 import java.util.List;
 import java.util.Map;
 
-public class ModArmorItem extends ArmorItem {
+public class FrostArmorItem extends ArmorItem {
 
     private static final Map<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>()
-                    .put(ModArmorMaterials.tnt,
+                    .put(ModArmorMaterials.ice,
                             List.of(
-                                    new StatusEffectInstance(ModEffects.EXPLOSION, 400, 2, false, false))).build();
+                                    new StatusEffectInstance(ModEffects.FROSTY, 400, 2, false, false),
+                                    new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 50, false, false)
+                            )
+                    ).build();
 
 
-    public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
+    public FrostArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
         super(material, type, settings);
     }
 
@@ -38,7 +41,8 @@ public class ModArmorItem extends ArmorItem {
         if (entity instanceof PlayerEntity player) {
 
             if (hasFullSuitOfArmorOn(player)) {
-                evaluateArmorEffects(player);}
+                evaluateArmorEffects(player);
+            }
         }
 
         super.inventoryTick(stack, world, entity, slot, selected);
@@ -64,9 +68,7 @@ public class ModArmorItem extends ArmorItem {
                     instance.getEffectType(),
                     220, // refresh timer (keeps it active)
                     instance.getAmplifier(),
-                    true,
-                    false,
-                    false
+                    true, false, false
             ));
         }
     }

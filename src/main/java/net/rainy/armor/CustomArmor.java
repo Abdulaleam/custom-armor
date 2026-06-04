@@ -18,7 +18,7 @@ public class CustomArmor implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModEffects.registerEffects();
-
+		
 
 
 

@@ -36,6 +36,20 @@ public class ModItemGroups {
 
 
                     }).build());
+    public static final ItemGroup FROST = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(CustomArmor.MOD_ID, "custom_armor_ice"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(Items.SNOWBALL))
+                    .displayName(Text.translatable("itemgroup.armor.ice"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(Items.TRIDENT);
+                        entries.add(ModItems.ICE_HELMET);
+                        entries.add(ModItems.ICE_CHESTPLATE);
+                        entries.add(ModItems.ICE_LEGGINGS);
+                        entries.add(ModItems.ICE_BOOTS);
+
+
+                    }).build());
+
 
 
 

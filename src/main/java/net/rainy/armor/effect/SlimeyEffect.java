@@ -19,7 +19,6 @@ public class SlimeyEffect extends StatusEffect {
         if (entity.horizontalCollision) {
 
             Vec3d velocity = entity.getVelocity();
-
             Vec3d climbVec = new Vec3d(
                     velocity.x, 0.2D + (amplifier * 0.05D), velocity.z);
             entity.setVelocity(climbVec.multiply(0.96D));

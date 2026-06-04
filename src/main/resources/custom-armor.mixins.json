@@ -3,7 +3,9 @@
 	"package": "net.rainy.armor.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"TridentEntityMixin",
+		"TridentItemMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

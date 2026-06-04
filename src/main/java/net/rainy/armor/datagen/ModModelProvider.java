@@ -6,6 +6,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.Items;
 import net.rainy.armor.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -31,6 +32,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ICE_HELMET));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ICE_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ICE_LEGGINGS));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ICE_CHESTPLATE));
+
+
 
 
 

@@ -1,21 +1,29 @@
-// 1.21.1	2026-06-03T14:35:34.748576	Custom Armor/Recipes
+// 1.21.1	2026-06-03T19:13:26.3054213	Custom Armor/Recipes
+da0b4010e6803e65a332dea352fe7eca26d09ab3 data\custom-armor\recipe\ice_chestplate.json
 f5fc1566e278b9698a1fb2c2fae839454682c250 data\custom-armor\recipe\slime_sling.json
-a357ebf84471c9927c805b0ab7f0371ece01b1b7 data\custom-armor\advancement\recipes\misc\tnt_helmet.json
 0928c120d9072e4624591fe0578f84eee6fd2451 data\custom-armor\recipe\slime_chestplate.json
+ac066a0fa4987dc965d1da0b0bbfb7e1693022bb data\custom-armor\advancement\recipes\misc\ice_boots.json
 8d9866a6f29ab94ebf82f896e360205f135b6a2c data\custom-armor\recipe\tnt_leggings.json
-84858f16415445cc3d1bca6e1065649411f950c1 data\custom-armor\advancement\recipes\misc\tnt_boots.json
 8978c2fc469deb2a5a5564990fbae1002fafb65a data\custom-armor\advancement\recipes\misc\tnt_sword.json
+f83a7d3d16659252f1a427eb453dab1a22578352 data\custom-armor\recipe\ice_helmet.json
+e8a610089dbb975f184febdaff66714a796135b2 data\custom-armor\recipe\slime_helmet.json
+c7b27a917b6b81e9e0e865409a15e038369ff9f3 data\custom-armor\recipe\slime_boots.json
+8b777cd918b410c29ee1db8b74e935f94b254e23 data\custom-armor\advancement\recipes\misc\tnt_leggings.json
+43f8c8b019199e6c7fe474a2a8f2d77356f0c0c7 data\custom-armor\recipe\ice_boots.json
+fbf61c54f6e1882a90d88eba536ed1abbd2814a4 data\custom-armor\recipe\tnt_helmet.json
+71d30e7072cde18d949a8b3a126e63d192a24375 data\custom-armor\advancement\recipes\misc\ice_helmet.json
+5d7c2af372aea741c2d06fb3432d23ed386b605c data\custom-armor\recipe\tnt_boots.json
+21607684781c147000298793477100070ef69da3 data\custom-armor\recipe\ice_leggings.json
+a357ebf84471c9927c805b0ab7f0371ece01b1b7 data\custom-armor\advancement\recipes\misc\tnt_helmet.json
+083dd59b14dc8b01f05d5f7ba279ab08845ca745 data\custom-armor\advancement\recipes\misc\ice_chestplate.json
+84858f16415445cc3d1bca6e1065649411f950c1 data\custom-armor\advancement\recipes\misc\tnt_boots.json
 0ba4a693582b15b244e038a2fd3357f0ba67bab4 data\custom-armor\recipe\tnt_sword.json
 89152228d33bc0e00f0e30bad6c442504fd72851 data\custom-armor\advancement\recipes\misc\slime_chestplate.json
 b58aafe115ecb2cf035974518b6620f52530686b data\custom-armor\recipe\slime_leggings.json
-e8a610089dbb975f184febdaff66714a796135b2 data\custom-armor\recipe\slime_helmet.json
 a3e181acb6a554266c36f387cfb3a29f6cb27778 data\custom-armor\advancement\recipes\misc\slime_helmet.json
-8b777cd918b410c29ee1db8b74e935f94b254e23 data\custom-armor\advancement\recipes\misc\tnt_leggings.json
-c7b27a917b6b81e9e0e865409a15e038369ff9f3 data\custom-armor\recipe\slime_boots.json
 6ab5bf8d4f389dc73ff6f99244418d8dbc23a5b4 data\custom-armor\advancement\recipes\misc\slime_boots.json
-fbf61c54f6e1882a90d88eba536ed1abbd2814a4 data\custom-armor\recipe\tnt_helmet.json
 355def18f0ba0e2c01955fa1a56173db857955e5 data\custom-armor\advancement\recipes\misc\slime_leggings.json
-5d7c2af372aea741c2d06fb3432d23ed386b605c data\custom-armor\recipe\tnt_boots.json
+41e175eb2c6f5f6490dbb72fa86e440c0304145e data\custom-armor\advancement\recipes\misc\ice_leggings.json
 05d7ca7cd0c4dfb820614c23c395e1aeb2b87823 data\custom-armor\advancement\recipes\misc\slime_sling.json
 7f60dec3856ed7039494b7852b06624b486b64a0 data\custom-armor\recipe\tnt_chestplate.json
 a50127b24f8672350a94e9c5c914b4cbd0290a74 data\custom-armor\advancement\recipes\misc\tnt_chestplate.json
