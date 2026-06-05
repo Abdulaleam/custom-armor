@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-05T11:06:25.7292932	Custom Armor/Model Definitions
+// 1.21.1	2026-06-05T11:18:57.0749	Custom Armor/Model Definitions
 8d738bc849a42f765b1ea1604c89ce966960cff1 assets\custom-armor\models\item\pearl_helmet_gold_trim.json
 b3d1da7db0bb57ff5f0c6539f4801a69d8168ca3 assets\custom-armor\models\item\ice_chestplate_lapis_trim.json
 4b2e952ad44736f855cab95ce466bf188a0c3ecf assets\custom-armor\models\item\slime_helmet_gold_trim.json
@@ -36,8 +36,8 @@ f37c48ca10f01903b990196502e033edc0976fc7 assets\custom-armor\models\item\ice_boo
 ad2a09ee0efc694d975f343bc370613df6d9eb34 assets\custom-armor\models\item\ice_leggings_amethyst_trim.json
 356af682edf93480fbc5a0f00275346f33a9163b assets\custom-armor\models\item\bedrock_helmet_quartz_trim.json
 e412c0a0c2abad4ed88237762516ff066778be14 assets\custom-armor\models\item\ice_boots_netherite_trim.json
-68dcd15c6ddb15068f157e9c2e305adbcaf2226d assets\custom-armor\models\item\ice_leggings_netherite_trim.json
 7c6cd97334bbe37a6ca4bc9901927911977b5d17 assets\custom-armor\models\item\tnt_leggings_netherite_trim.json
+68dcd15c6ddb15068f157e9c2e305adbcaf2226d assets\custom-armor\models\item\ice_leggings_netherite_trim.json
 dcfec52e6d4fc473c2d7b783046cc17c363e3dd9 assets\custom-armor\models\item\bedrock_boots_netherite_trim.json
 251ee8820069d525541f1a027a2f4f5fd053cf76 assets\custom-armor\models\item\tnt_helmet_netherite_trim.json
 59f3e71a857ba3f15a185455ab3d55734e2a6678 assets\custom-armor\models\item\bedrock_leggings_emerald_trim.json
@@ -220,5 +220,5 @@ e6b3b89dc4d64d31df47dc3d4feae8461a24fd1c assets\custom-armor\models\item\slime_c
 929f06951ff0a63ef4f1d04f6975f0929ba35573 assets\custom-armor\models\item\slime_boots_netherite_trim.json
 02a6d8b9ec6502327e9a150d001d35aba39ac2a9 assets\custom-armor\models\item\ice_chestplate_diamond_trim.json
 05ac7e747558bbf028f96bdcfcb57f908eb6bb01 assets\custom-armor\models\item\bedrock_leggings_iron_trim.json
-0eae62d7003bda975f7edab182fdb6ad6db651e3 assets\custom-armor\models\item\bedrock_helmet_diamond_trim.json
 c5418a4fdfe602b862836dfcaa334379558d397d assets\custom-armor\models\item\pearl_boots_amethyst_trim.json
+0eae62d7003bda975f7edab182fdb6ad6db651e3 assets\custom-armor\models\item\bedrock_helmet_diamond_trim.json

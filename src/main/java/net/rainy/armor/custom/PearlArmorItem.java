@@ -20,7 +20,7 @@ public class PearlArmorItem extends ArmorItem {
             new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>()
                     .put(ModArmorMaterials.pearl,
                             List.of(
-                                    new StatusEffectInstance(ModEffects.FROSTY, 400, 2, false, false),
+                                    new StatusEffectInstance(ModEffects.VOID, 400, 2, false, false),
                                     new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 50, false, false)
                             )
                     ).build();

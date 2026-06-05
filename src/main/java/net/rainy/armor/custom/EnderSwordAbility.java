@@ -1,22 +1,23 @@
 package net.rainy.armor.custom;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
 
-import java.util.Random;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class EnderSwordAbility extends SwordItem {
 
-    private final Random random = new Random();
+    private static final ConcurrentHashMap<java.util.UUID, LivingEntity> LINKED = new ConcurrentHashMap<>();
 
     public EnderSwordAbility(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
@@ -24,55 +25,54 @@ public class EnderSwordAbility extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if (!target.getWorld().isClient()) {
-            Vec3d targetPos = target.getPos();
-            Vec3d attackerPos = attacker.getPos();
-            boolean sneaking = attacker.isSneaking();
-            Entity atk = (Entity) attacker;
-            Entity tgt = (Entity) target;
-            if (sneaking) {
-                double radius = 6.0;
-                double x = attackerPos.x + (random.nextDouble() - 0.5) * radius;
-                double y = attackerPos.y;
-                double z = attackerPos.z + (random.nextDouble() - 0.5) * radius;
-                atk.requestTeleport(x, y, z);
-                spawnPortal(target, attackerPos);
-                spawnPortal(target, new Vec3d(x, y, z));
-                target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 60, 1));
-                target.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 60, 0));
-                target.getWorld().playSound(null, target.getBlockPos(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 1f, 1f
-                );
 
-            } else {
-                if (random.nextFloat() < 0.35f) {
-                    atk.requestTeleport(targetPos.x, targetPos.y, targetPos.z);
-                    tgt.requestTeleport(attackerPos.x, attackerPos.y, attackerPos.z);
-                    spawnPortal(target, targetPos);
-                    spawnPortal(target, attackerPos);
+        if (attacker.getWorld().isClient()) return super.postHit(stack, target, attacker);
+        if (!(attacker instanceof PlayerEntity player)) return super.postHit(stack, target, attacker);
 
-                } else {
-                    double blinkRadius = 3.0;
-                    double x = targetPos.x + (random.nextDouble() - 0.5) * blinkRadius;
-                    double y = targetPos.y;
-                    double z = targetPos.z + (random.nextDouble() - 0.5) * blinkRadius;
-                    tgt.requestTeleport(x, y, z);
-                    spawnPortal(target, targetPos);
-                    spawnPortal(target, new Vec3d(x, y, z));
-                }
-                target.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 82, 0));
-                target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 84, 1));
+        ServerWorld world = (ServerWorld) attacker.getWorld();
 
-                target.getWorld().playSound(null, target.getBlockPos(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 1f, 1.2f
-                );
-            }}
-        return super.postHit(stack, target, attacker);
-    }
-    private void spawnPortal(LivingEntity entity, Vec3d pos) {
-        for (int i = 0; i < 15; i++) {
-                         entity.getWorld().addParticle(
-                    ParticleTypes.PORTAL, pos.x, pos.y + 1, pos.z, (random.nextDouble() - 0.5) * 0.2,
-                    (random.nextDouble() - 0.5) * 0.2, (random.nextDouble() - 0.5) * 0.2
-            );
+        if (player.isSneaking()) {
+            LINKED.put(player.getUuid(), target);
+               world.playSound(null, target.getBlockPos(), SoundEvents.ENTITY_GENERIC_EXPLODE.value(), SoundCategory.PLAYERS, 1f, 1f);
+
+            return super.postHit(stack, target, attacker);
         }
+
+        Vec3d dir = target.getPos().subtract(player.getPos()).normalize();
+
+        double x = player.getX() + dir.x * 2;
+        double y = player.getY();
+        double z = player.getZ() + dir.z * 2;
+
+        player.requestTeleport(x, y, z);
+
+
+        world.playSound(null, target.getBlockPos(), SoundEvents.ENTITY_GENERIC_EXPLODE.value(), SoundCategory.PLAYERS, 1f, 1f);
+          return super.postHit(stack, target, attacker);
+    }
+
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+
+        if (world.isClient())
+
+            return TypedActionResult.pass(user.getStackInHand(hand));
+        if (!(world instanceof ServerWorld serverWorld))
+
+            return TypedActionResult.pass(user.getStackInHand(hand));
+
+        LivingEntity target = LINKED.remove(user.getUuid());
+        if (target == null || !target.isAlive()) {
+
+            return TypedActionResult.pass(user.getStackInHand(hand));
+        }
+
+        Vec3d dir = user.getRotationVec(1.0F).normalize();
+        Vec3d launch = dir.multiply(6.5);
+        target.setVelocity(launch.x, launch.y * 0.5, launch.z);
+               target.velocityModified = true;
+
+        serverWorld.playSound(null, target.getBlockPos(), SoundEvents.ENTITY_GENERIC_EXPLODE.value(), SoundCategory.PLAYERS, 1f, 1f);
+        return TypedActionResult.success(user.getStackInHand(hand));
     }
 }

@@ -37,6 +37,9 @@ public class ModEffects {
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
 
+    public static final RegistryEntry<StatusEffect> VOID = registerStatusEffect("void",
+            new VoidEffect(StatusEffectCategory.BENEFICIAL, 0x36ebab));
+
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(CustomArmor.MOD_ID, name), statusEffect);
     }
