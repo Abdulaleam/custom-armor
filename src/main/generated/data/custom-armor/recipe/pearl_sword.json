@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "pattern": [
+    "R",
+    "R",
+    "F"
+  ],
+  "result": {
+    "count": 1,
+    "id": "custom-armor:pearl_sword"
+  }
+}

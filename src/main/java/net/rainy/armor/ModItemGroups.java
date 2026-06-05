@@ -64,6 +64,23 @@ public class ModItemGroups {
                     }).build());
 
 
+    public static final ItemGroup PEARL = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(CustomArmor.MOD_ID, "custom_armor_pearl"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(Items.ENDER_PEARL))
+                    .displayName(Text.translatable("itemgroup.armor.bedrock"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.PEARL_SWORD);
+                        entries.add(ModItems.PEARL_HELMET);
+                        entries.add(ModItems.PEARL_CHESTPLATE);
+                        entries.add(ModItems.PEARL_LEGGINGS);
+                        entries.add(ModItems.PEARL_BOOTS);
+
+
+                    }).build());
+
+
+
+
 
 
 

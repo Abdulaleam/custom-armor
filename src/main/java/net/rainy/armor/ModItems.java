@@ -85,6 +85,31 @@ public class ModItems {
     );
 
 
+    public static final Item PEARL_HELMET = registerItem("pearl_helmet",
+            new PearlArmorItem(ModArmorMaterials.pearl, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+
+    public static final Item PEARL_LEGGINGS = registerItem("pearl_leggings",
+            new PearlArmorItem(ModArmorMaterials.pearl, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+
+    public static final Item PEARL_CHESTPLATE = registerItem("pearl_chestplate",
+            new ArmorItem(ModArmorMaterials.pearl, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+
+    public static final Item PEARL_BOOTS = registerItem("pearl_boots",
+            new ArmorItem(ModArmorMaterials.pearl, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
+    public static final Item PEARL_SWORD = Registry.register(
+            Registries.ITEM,
+            Identifier.of("custom-armor", "pearl_sword"),
+            // Pass the material, bonus damage, speed tracker, and settings
+            new BedrockSwordAblity(ToolMaterials.IRON, new Item.Settings())
+    );
+
+
+
 
     public static void registerModItems() {
         CustomArmor.LOGGER.info("Registering Modded items and armor  for " + CustomArmor.MOD_ID);

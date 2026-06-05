@@ -28,6 +28,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.TNT_BOOTS));
         itemModelGenerator.register(ModItems.TNT_SWORD, Models.HANDHELD);
+
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_LEGGINGS));
@@ -36,15 +37,22 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ICE_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ICE_BOOTS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ICE_LEGGINGS));
-
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ICE_CHESTPLATE));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEDROCK_HELMET));
 
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEDROCK_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEDROCK_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEDROCK_LEGGINGS));
-
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEDROCK_BOOTS));
+
         itemModelGenerator.register(ModItems.BEDROCK_SWORD, Models.HANDHELD);
+
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PEARL_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PEARL_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PEARL_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PEARL_CHESTPLATE));
+
+        itemModelGenerator.register(ModItems.PEARL_SWORD, Models.HANDHELD);
 
 
 

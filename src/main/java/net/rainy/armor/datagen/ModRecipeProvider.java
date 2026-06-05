@@ -171,6 +171,46 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PEARL_HELMET)
+                .pattern("RRR")
+                .pattern("R R")
+                .input('R', Items.ENDER_PEARL)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.ENDER_PEARL))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PEARL_CHESTPLATE)
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .input('R', Items.ENDER_PEARL)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.COBBLESTONE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PEARL_LEGGINGS)
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', Items.ENDER_PEARL)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.ENDER_PEARL))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PEARL_BOOTS)
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', Items.ENDER_PEARL)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.ENDER_PEARL))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PEARL_SWORD)
+                .pattern("R")
+                .pattern("R")
+                .pattern("F")
+                .input('R', Items.ENDER_PEARL)
+                .input('F', Items.STICK)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.ENDER_PEARL))
+                .offerTo(exporter);
+
+
+
 
 
 

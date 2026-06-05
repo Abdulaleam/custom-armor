@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "pattern": [
+    "R R",
+    "R R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "custom-armor:pearl_boots"
+  }
+}
