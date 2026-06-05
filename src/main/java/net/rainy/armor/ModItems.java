@@ -1,6 +1,7 @@
 package net.rainy.armor;
 
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.EnderPearlItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
@@ -105,7 +106,7 @@ public class ModItems {
             Registries.ITEM,
             Identifier.of("custom-armor", "pearl_sword"),
             // Pass the material, bonus damage, speed tracker, and settings
-            new BedrockSwordAblity(ToolMaterials.IRON, new Item.Settings())
+            new EnderSwordAbility(ToolMaterials.IRON, new Item.Settings())
     );
 
 

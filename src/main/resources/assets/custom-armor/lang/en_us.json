@@ -36,5 +36,13 @@
   "effect.custom-armor.slimey": "§a§lSlime Bounce",
   "effect.custom-armor.explosion": "§c§lBlast Backlash",
   "effect.custom-armor.frosty": "§b§lCryo-Trail",
-  "effect.custom-armor.bedrocky": "§8§lBedrock Step"
+  "effect.custom-armor.bedrocky": "§8§lBedrock Step",
+
+  "itemgroup.armor.pearl": "§a☣ Void Mutation",
+
+  "item.custom-armor.pearl_sword": "Void Sword",
+  "item.custom-armor.pearl_chestplate": "§8§l🛡 Voidforge Unyielding Plate",
+  "item.custom-armor.pearl_helmet": "§8§l🛡 Greathelm of Infallible Bastion",
+  "item.custom-armor.pearl_leggings": "§8§l🛡 Adamantite Pillar Legguards",
+  "item.custom-armor.pearl_boots": "§8§l🛡 Seismic Foundation Stompers"
 }
