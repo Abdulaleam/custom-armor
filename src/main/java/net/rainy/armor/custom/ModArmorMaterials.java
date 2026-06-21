@@ -72,7 +72,7 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 100);
                 map.put(ArmorItem.Type.BODY, 100);
             }), 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(Items.OAK_LOG),
-                    List.of(new ArmorMaterial.Layer(Identifier.of(CustomArmor.MOD_ID, "pearl"))), 0,0));
+                    List.of(new ArmorMaterial.Layer(Identifier.of(CustomArmor.MOD_ID, "oak"))), 0,0));
 
 
 

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 import net.rainy.armor.effect.ModEffects;
+import net.rainy.armor.effect.TreeMinerEffect;
 import net.rainy.armor.effect.VoidEffect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +21,7 @@ public class CustomArmor implements ModInitializer {
 		ModItems.registerModItems();
 		ModEffects.registerEffects();
 		VoidEffect.register();
-		
+		TreeMinerEffect.registerEvents();
 
 
 
