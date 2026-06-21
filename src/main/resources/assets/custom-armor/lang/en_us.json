@@ -45,5 +45,16 @@
   "effect.custom-armor.explosion": "§cBlast",
   "effect.custom-armor.frosty": "§bFrost",
   "effect.custom-armor.bedrocky": "§8Anchor",
-  "effect.custom-armor.void": "§5Void"
+  "effect.custom-armor.void": "§5Void",
+
+
+  "itemgroup.armor.oak": "§6🌳 WORLDROOT ASCENSION",
+
+  "item.custom-armor.oak_chestplate": "§6§lWorldroot Heartplate",
+  "item.custom-armor.oak_helmet": "§6§lCrown of the First Forest",
+  "item.custom-armor.oak_leggings": "§6§lAncient Grove Legguards",
+  "item.custom-armor.oak_boots": "§6§lTitanwood Striders",
+
+  "effect.custom-armor.lumberjack": "§6Tree Feller"
+
 }

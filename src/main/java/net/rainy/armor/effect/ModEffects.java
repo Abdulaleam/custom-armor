@@ -35,7 +35,8 @@ public class ModEffects {
                     .addAttributeModifier(EntityAttributes.GENERIC_SCALE,
                             Identifier.of(CustomArmor.MOD_ID, "bedrock_size"), -0.8f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-
+    public static final RegistryEntry<StatusEffect> OAKY = registerStatusEffect("oaky",
+            new TreeMinerEffect(StatusEffectCategory.BENEFICIAL, 0x36ebab));
 
     public static final RegistryEntry<StatusEffect> VOID = registerStatusEffect("void",
             new VoidEffect(StatusEffectCategory.BENEFICIAL, 0x36ebab));

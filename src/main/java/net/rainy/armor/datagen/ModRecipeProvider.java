@@ -213,6 +213,35 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OAK_HELMET)
+                .pattern("RRR")
+                .pattern("R R")
+                .input('R', Items.OAK_LOG)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.OAK_LOG))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OAK_CHESTPLATE)
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .input('R', Items.OAK_LOG)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.OAK_LOG))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OAK_LEGGINGS)
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', Items.OAK_LOG)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.OAK_LOG))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OAK_BOOTS)
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', Items.OAK_LOG)
+                .criterion(hasItem(Items.CRAFTING_TABLE), conditionsFromItem(Items.OAK_LOG))
+                .offerTo(exporter);
 
 
 

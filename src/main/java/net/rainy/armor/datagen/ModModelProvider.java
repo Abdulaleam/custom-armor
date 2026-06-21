@@ -55,6 +55,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PEARL_SWORD, Models.HANDHELD);
 
 
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OAK_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OAK_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OAK_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OAK_BOOTS));
+
+
+
 
 
 

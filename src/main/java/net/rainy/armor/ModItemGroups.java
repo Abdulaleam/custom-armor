@@ -10,6 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
+
     public static final ItemGroup TNT_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(CustomArmor.MOD_ID, "custom_armor_tnt"),
             FabricItemGroup.builder().icon(() -> new ItemStack(Items.TNT))
@@ -42,9 +43,9 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.armor.ice"))
                     .entries((displayContext, entries) -> {
                         entries.add(Items.TRIDENT);
+                        entries.add(ModItems.ICE_LEGGINGS);
                         entries.add(ModItems.ICE_HELMET);
                         entries.add(ModItems.ICE_CHESTPLATE);
-                        entries.add(ModItems.ICE_LEGGINGS);
                         entries.add(ModItems.ICE_BOOTS);
 
 
@@ -77,16 +78,24 @@ public class ModItemGroups {
 
 
                     }).build());
+    public static final ItemGroup OAK = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(CustomArmor.MOD_ID, "custom_armor_oak"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(Items.OAK_LOG))
+                    .displayName(Text.translatable("itemgroup.armor.oak"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.OAK_HELMET);
+                        entries.add(ModItems.OAK_LEGGINGS);
+                        entries.add(ModItems.OAK_CHESTPLATE);
+                        entries.add(ModItems.OAK_BOOTS);
 
 
+                    }).build());
 
-
-
-
-
-    public static void registerItemGroups() {
-        CustomArmor.LOGGER.info("Registering Item Groups for " + CustomArmor.MOD_ID);
+    public static void registerItemGroups(){
+        CustomArmor.LOGGER.info("registergingg groupss :) for " + CustomArmor.MOD_ID);
     }
+
+
 }
 
 
