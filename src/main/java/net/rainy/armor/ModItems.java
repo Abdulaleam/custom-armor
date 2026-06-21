@@ -105,19 +105,19 @@ public class ModItems {
 
 
     public static final Item OAK_HELMET = registerItem("oak_helmet",
-            new PearlArmorItem(ModArmorMaterials.pearl, ArmorItem.Type.HELMET, new Item.Settings()
+            new OakArmorItem(ModArmorMaterials.oak, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
 
     public static final Item OAK_LEGGINGS = registerItem("oak_leggings",
-            new PearlArmorItem(ModArmorMaterials.pearl, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            new OakArmorItem(ModArmorMaterials.oak, ArmorItem.Type.LEGGINGS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
 
     public static final Item OAK_CHESTPLATE = registerItem("oak_chestplate",
-            new ArmorItem(ModArmorMaterials.pearl, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            new ArmorItem(ModArmorMaterials.oak, ArmorItem.Type.CHESTPLATE, new Item.Settings()
                     .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
 
     public static final Item OAK_BOOTS = registerItem("oak_boots",
-            new ArmorItem(ModArmorMaterials.pearl, ArmorItem.Type.BOOTS, new Item.Settings()
+            new ArmorItem(ModArmorMaterials.oak, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
 

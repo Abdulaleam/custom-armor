@@ -84,8 +84,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.armor.oak"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.OAK_HELMET);
-                        entries.add(ModItems.OAK_LEGGINGS);
                         entries.add(ModItems.OAK_CHESTPLATE);
+                        entries.add(ModItems.OAK_LEGGINGS);
                         entries.add(ModItems.OAK_BOOTS);
 
 

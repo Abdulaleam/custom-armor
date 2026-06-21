@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-21T15:46:19.3152183	Custom Armor/Model Definitions
+// 1.21.1	2026-06-21T15:55:04.5831615	Custom Armor/Model Definitions
 8d738bc849a42f765b1ea1604c89ce966960cff1 assets\custom-armor\models\item\pearl_helmet_gold_trim.json
 b3d1da7db0bb57ff5f0c6539f4801a69d8168ca3 assets\custom-armor\models\item\ice_chestplate_lapis_trim.json
 84531db386824b10b1d4be92ffc134e29bad090a assets\custom-armor\models\item\oak_chestplate_copper_trim.json
@@ -6,8 +6,8 @@ b3d1da7db0bb57ff5f0c6539f4801a69d8168ca3 assets\custom-armor\models\item\ice_che
 da2ba01692e68f98c49d339759c0c41d5b8e67b3 assets\custom-armor\models\item\bedrock_chestplate_gold_trim.json
 7abc9037992643cc03e7bb999af30a1b995d42ab assets\custom-armor\models\item\tnt_chestplate_quartz_trim.json
 26461592acc286d4179c9ad347e3ef60e47200a1 assets\custom-armor\models\item\slime_boots_lapis_trim.json
-9cb175eac90c391162c634d79b31a4bd76b11fb4 assets\custom-armor\models\item\pearl_boots_lapis_trim.json
 98813ea458730ee1d8347c6fcf541d4cd1d12622 assets\custom-armor\models\item\ice_leggings_redstone_trim.json
+9cb175eac90c391162c634d79b31a4bd76b11fb4 assets\custom-armor\models\item\pearl_boots_lapis_trim.json
 b156e490fec92f6be5cf578687327a61b072fecf assets\custom-armor\models\item\ice_chestplate_gold_trim.json
 a91b9033ccbecff0cfa61a83f924199cbe7b7356 assets\custom-armor\models\item\tnt_chestplate_diamond_trim.json
 6c87b46615b085a446601e2a582631ca3621d5c2 assets\custom-armor\models\item\oak_helmet.json
